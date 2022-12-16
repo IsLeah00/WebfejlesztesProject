@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Kurzus szerkesztése </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Kurzus ID </label>
+                        <input type="text" class="form-control" id="Id" [(ngModel)]="subject.id"
+                            name="Id">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Kurzus neve </label>
+                        <input type="text" class="form-control" id="subName" [(ngModel)]="subject.subname"
+                            name="subName">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Kreditértéke </label>
+                        <input type="text" class="form-control" id="Credit" [(ngModel)]="subject.credit"
+                            name="Credit">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Hiányzások száma </label>
+                        <input type="text" class="form-control" id="Absence" [(ngModel)]="subject.absence"
+                            name="Absence">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Vizsga/ZH ideje </label>
+                        <input type="text" class="form-control" id="Examtime" [(ngModel)]="subject.examtime"
+                            name="Examtime">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Kész</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

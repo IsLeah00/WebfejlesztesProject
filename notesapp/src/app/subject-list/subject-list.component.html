@@ -1,0 +1,28 @@
+<div class = "row">
+    <h2> Kurzus Lista</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Kurzus ID </th>
+            <th> Kurzus neve </th>
+            <th> Kreditértéke </th>
+            <th> Hiányzások száma </th>
+            <th> Vizsga/ZH ideje </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let subject of subjects" >
+            <td> {{ subject.id }} </td>
+            <td> {{ subject.subname }} </td>
+            <td> {{ subject.credit }} </td>
+            <td> {{ subject.absence }} </td>
+            <td> {{ subject.examtime }} </td>
+            <td>
+                <button (click) = "updateSubject(subject.id)" class = "btn btn-primary"> Szerkesztés</button>
+                <button (click) = "deleteSubject(subject.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
