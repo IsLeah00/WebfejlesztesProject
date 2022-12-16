@@ -33,7 +33,7 @@ public class SubjectService {
 
     public Subject findSubjectById(Long id) {
         return subjectRepo.findSubjectById(id)
-                .orElseThrow(() -> new SubjectNotFoundException("Tantárgy nem található " + id + " ID alapján."));
+                .orElseThrow(() -> new SubjectNotFoundException("Kurzus nem található " + id + " ID alapján."));
     }
 
     public void deleteSubject(Long id) {

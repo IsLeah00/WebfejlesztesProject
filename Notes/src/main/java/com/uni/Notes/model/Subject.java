@@ -14,7 +14,6 @@ public class Subject implements Serializable {
     private String credit;
     private String absence;
     private String examtime;
-    private String grade;
 
 
     public Subject() {}
@@ -24,7 +23,6 @@ public class Subject implements Serializable {
         this.credit = credit;
         this.absence = absence;
         this.examtime = examtime;
-        this.grade = grade;
     }
 
     public Long getId() {
@@ -62,12 +60,6 @@ public class Subject implements Serializable {
         this.examtime = examtime;
     }
 
-    public String getGrade() {
-        return grade;
-    }
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
 
     @Override
     public String toString() {
@@ -77,7 +69,6 @@ public class Subject implements Serializable {
                 ", credit=" + credit + '\'' +
                 ", absence=" + absence + '\'' +
                 ", examtime=" + examtime + '\'' +
-                ", grade=" + grade + '\'' +
                 '}';
     }
 
